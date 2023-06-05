@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/RoletaEducampo/static/css/main.32b52c29.css",
+    "main.js": "/RoletaEducampo/static/js/main.a86e6166.js",
+    "static/media/winner-bell-game-show.wav": "/RoletaEducampo/static/media/winner-bell-game-show.dd92b8620b60636d8bf1.wav",
+    "static/media/bad-beep-incorrect.wav": "/RoletaEducampo/static/media/bad-beep-incorrect.0d8cd91514b5d7fe4086.wav",
+    "static/media/Logo_Parque.png": "/RoletaEducampo/static/media/Logo_Parque.11798b946a7a6dc97a7b.png",
+    "static/media/Campton-Bold.otf": "/RoletaEducampo/static/media/Campton-Bold.d63feafcf51c807bd9bd.otf",
+    "static/media/marca-sebrae.png": "/RoletaEducampo/static/media/marca-sebrae.ba579773d9721cde0759.png",
+    "static/media/marca-sebrae-branca.png": "/RoletaEducampo/static/media/marca-sebrae-branca.9a13f7f8039988f8ad24.png",
+    "static/media/Logo_Arena.png": "/RoletaEducampo/static/media/Logo_Arena.6419f5f784265d0e22b6.png",
+    "index.html": "/RoletaEducampo/index.html",
+    "main.32b52c29.css.map": "/RoletaEducampo/static/css/main.32b52c29.css.map",
+    "main.a86e6166.js.map": "/RoletaEducampo/static/js/main.a86e6166.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32b52c29.css",
+    "static/js/main.a86e6166.js"
+  ]
+}
