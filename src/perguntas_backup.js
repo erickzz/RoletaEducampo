@@ -19,18 +19,37 @@ export const Perguntas = [
   },
   {
     tema: 'Produção',
-    pergunta: 'São raças importantes para produção de leite, exceto:',
+    pergunta: 'Qual é a principal raça de vaca leiteira no Brasil?',
     alternativas: [
       {
-        texto: 'Nelore',
+        texto: 'Holandesa',
         valor: true,
       },
       {
-        texto: 'Holandês',
+        texto: 'Jersey',
         valor: false,
       },
       {
         texto: 'Girolando',
+        valor: false,
+      },
+    ],
+  },
+  {
+    tema: 'Produção',
+    pergunta:
+      'Qual é o órgão responsável pela regulamentação da produção de leite no Brasil?',
+    alternativas: [
+      {
+        texto: 'Ministério da Agricultura',
+        valor: true,
+      },
+      {
+        texto: 'ANVISA',
+        valor: false,
+      },
+      {
+        texto: 'IBGE',
         valor: false,
       },
     ],
@@ -58,22 +77,40 @@ export const Perguntas = [
     pergunta: 'Qual é o prazo de validade médio do leite pasteurizado?',
     alternativas: [
       {
-        texto: '4 a 7 dias',
+        texto: '7 dias',
         valor: true,
       },
       {
-        texto: '8 a 15 dias',
+        texto: '15 dias',
         valor: false,
       },
       {
-        texto: '15 a 30 dias',
+        texto: '30 dias',
         valor: false,
       },
     ],
   },
   {
     tema: 'Produção',
-    pergunta: 'Qual é a proporção de água na composição do leite?',
+    pergunta: 'Qual é a maior cooperativa de laticínios do Brasil?',
+    alternativas: [
+      {
+        texto: 'Itambé',
+        valor: true,
+      },
+      {
+        texto: 'Aurora',
+        valor: false,
+      },
+      {
+        texto: 'Languiru',
+        valor: false,
+      },
+    ],
+  },
+  {
+    tema: 'Produção',
+    pergunta: 'Qual é a porcentagem média de água no leite?',
     alternativas: [
       {
         texto: '87%',
@@ -149,15 +186,15 @@ export const Perguntas = [
     pergunta: 'Qual é a porcentagem média de gordura no leite integral?',
     alternativas: [
       {
-        texto: '3% a 4%',
+        texto: '3,5%',
         valor: true,
       },
       {
-        texto: '1% a 2%',
+        texto: '1,5%',
         valor: false,
       },
       {
-        texto: '4% a 5%',
+        texto: '5,0%',
         valor: false,
       },
     ],
@@ -165,18 +202,18 @@ export const Perguntas = [
   {
     tema: 'Nutrição',
     pergunta:
-      'Qual é a recomendação geral para o consumo diário de leite em adultos?',
+      'Qual é a técnica utilizada para remover a gordura do leite e produzir leite desnatado?',
     alternativas: [
       {
-        texto: 'Varia, mas geralmente 2-3 porções',
+        texto: 'Homogeneização',
         valor: true,
       },
       {
-        texto: 'Pelo menos 6 porções',
+        texto: 'Pasteurização',
         valor: false,
       },
       {
-        texto: 'Não é recomendado para adultos',
+        texto: 'Desnatadeira centrífuga',
         valor: false,
       },
     ],
@@ -219,56 +256,54 @@ export const Perguntas = [
   },
   {
     tema: 'Nutrição',
-    pergunta:
-      'O leite desnatado tem uma quantidade mais alta de qual nutriente em comparação ao leite integral?',
+    pergunta: 'Qual é a média de litros de leite produzidos por vaca por dia?',
     alternativas: [
       {
-        texto: 'Cálcio',
+        texto: '30 litros',
         valor: true,
       },
       {
-        texto: 'Gordura',
+        texto: '20 litros',
         valor: false,
       },
       {
-        texto: 'Vitamina C',
+        texto: '10 litros',
         valor: false,
       },
     ],
   },
   {
     tema: 'Nutrição',
-    pergunta: 'Qual é a vitamina encontrada em maior quantidade no leite?',
+    pergunta: 'Qual é a quantidade média de gordura no leite desnatado?',
     alternativas: [
       {
-        texto: 'Vitamina D',
+        texto: '0%',
         valor: true,
       },
       {
-        texto: 'Vitamina K',
+        texto: '1%',
         valor: false,
       },
       {
-        texto: 'Vitamina C',
+        texto: '3%',
         valor: false,
       },
     ],
   },
   {
     tema: 'Nutrição',
-    pergunta:
-      'Qual é o mineral fundamental para a saúde dos ossos e que está presente no leite?',
+    pergunta: 'Qual é o teor de proteína presente no leite?',
     alternativas: [
       {
-        texto: 'Cálcio',
+        texto: 'Cerca de 3,2%',
         valor: true,
       },
       {
-        texto: 'Ferro',
+        texto: 'Cerca de 5,0%',
         valor: false,
       },
       {
-        texto: 'Potássio',
+        texto: 'Cerca de 1,0%',
         valor: false,
       },
     ],
@@ -283,12 +318,49 @@ export const Perguntas = [
         valor: true,
       },
       {
-        texto: 'Pasteurização',
+        texto: 'Fermentação',
+        valor: false,
+      },
+      {
+        texto: 'Congelamento',
+        valor: false,
+      },
+    ],
+  },
+  {
+    tema: 'Nutrição',
+    pergunta:
+      'Qual é o termo utilizado para se referir à adição de vitaminas e minerais no leite?',
+    alternativas: [
+      {
+        texto: 'Fortificação',
         valor: true,
       },
       {
-        texto: 'Pasteurização',
+        texto: 'Homogeneização',
+        valor: false,
+      },
+      {
+        texto: 'Fermentação',
+        valor: false,
+      },
+    ],
+  },
+  {
+    tema: 'Nutrição',
+    pergunta: 'Qual é a principal função da pasteurização do leite?',
+    alternativas: [
+      {
+        texto: 'Eliminar bactérias e microorganismos',
         valor: true,
+      },
+      {
+        texto: 'Aumentar a quantidade de gordura no leite',
+        valor: false,
+      },
+      {
+        texto: 'Alterar o sabor e aroma do leite',
+        valor: false,
       },
     ],
   },
@@ -367,18 +439,18 @@ export const Perguntas = [
   },
   {
     tema: 'Consumo',
-    pergunta: 'Qual é a bebida láctea mais consumida no mundo?',
+    pergunta: 'Qual é o mês em que se comemora o Dia Mundial do Leite?',
     alternativas: [
       {
-        texto: 'Leite de vaca',
+        texto: 'Maio',
         valor: true,
       },
       {
-        texto: 'Iogurte',
+        texto: 'Junho',
         valor: false,
       },
       {
-        texto: 'Leite de cabra',
+        texto: 'Julho',
         valor: false,
       },
     ],
@@ -439,44 +511,38 @@ export const Perguntas = [
   },
   {
     tema: 'Consumo',
-    pergunta:
-      'Quanto tempo o leite pode ser armazenado com segurança na geladeira?',
-    alternativas: [
-      { texto: '3-5 dias', valor: true },
-      { texto: '1-2 semanas', valor: false },
-      { texto: '2-3 meses', valor: false },
-    ],
-  },
-  {
-    tema: 'Consumo',
-    pergunta:
-      'Qual é o nome da proteína do leite que pode causar alergias em algumas pessoas?',
-    alternativas: [
-      { texto: 'Caseína', valor: true },
-      { texto: 'Lactose', valor: false },
-      { texto: 'Lactulose', valor: false },
-    ],
-  },
-  {
-    tema: 'Consumo',
-    pergunta: 'Qual é a duração típica da gestação de uma vaca leiteira?',
-    alternativas: [
-      { texto: 'Cerca de 12 meses (365 dias)', valor: true },
-      { texto: 'Cerca de 6 meses (180 dias)', valor: false },
-      { texto: 'Cerca de 9 meses (280 dias)', valor: false },
-    ],
-  },
-  {
-    tema: 'Consumo',
-    pergunta: 'O que é a inseminação artificial em bovinos?',
+    pergunta: 'Qual é o processo utilizado para separar o creme do leite?',
     alternativas: [
       {
-        texto:
-          'Método de reprodução controlada que utiliza esperma de touro para fertilizar a vaca',
+        texto: 'Centrifugação',
         valor: true,
       },
-      { texto: 'Cruzamento natural entre touro e vaca', valor: false },
-      { texto: 'Processo de clonagem de bovinos', valor: false },
+      {
+        texto: 'Coagulação',
+        valor: false,
+      },
+      {
+        texto: 'Batedura',
+        valor: false,
+      },
+    ],
+  },
+  {
+    tema: 'Consumo',
+    pergunta: 'Qual é a temperatura de pasteurização do leite?',
+    alternativas: [
+      {
+        texto: '72°C por 15 segundos',
+        valor: true,
+      },
+      {
+        texto: '100°C por 1 minuto',
+        valor: false,
+      },
+      {
+        texto: '60°C por 30 minutos',
+        valor: false,
+      },
     ],
   },
 ];
